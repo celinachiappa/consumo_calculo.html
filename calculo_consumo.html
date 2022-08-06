@@ -1,0 +1,114 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Calculo_consumo</title>
+</head>
+    <body>
+
+        <h2>¿Alcohol o gasolina?</h2>  
+
+         <script>
+
+         //Declaración de Variables//
+
+         var tanque = 40;
+         var kilometroGasolina = 480;
+         var kilometroAlcohol = 300;
+
+         var eficiencia1 = (kilometroAlcohol/tanque);
+         var eficiencia2 = (kilometroGasolina/tanque);
+
+         document.write ("Soluciónes <br>");
+         document.write ("<br>");
+        
+          //Problema: Si un carro tiene un tanque de 40 litros Usando gasolina y consumiendo todo el tanque se hace un recorrido de 480 kilómetros. ¿Cuál es la eficiencia del carro usando gasolina? o sea, ¿cuántos kilómetros recorre el carro por cada litro de gasolina? Para calcular la eficiencia: divide la distancia recorrida entre la cantidad de litros gastados. Imprime el valor utilizando document.write. Organiza las cuentas en variables//
+
+         document.write ("Los kilometros recorridos con gasolina son: " + eficiencia2);
+
+         document.write ("<br>");
+         document.write ("<br>");
+         document.write ("<br>");
+
+          //Por otro lado, si el carro usa alcohol como combustible, el mismo tanque de 40 litros hace un recorrido de 300 kilómetros. ¿Cuál es el la eficiencia del carro usando alcohol//
+       
+
+         document.write ("Los kilometros recorridos con alcohol son: " + eficiencia1);
+         SaltarLinea()
+        
+         </script>
+
+         <h2> Funciones</h2>
+            <p> //var saltoDeLinea = ("brbrbr");//
+            SaltarLinea()
+            document.write ("Candela");
+            SaltarLinea()
+            document.write ("Agustina");
+            SaltarLinea()
+            document.write ("Valentina");
+            </p>
+        
+            <!--Otro camino para resolver nuestro problema de no repetir líneas de código con la misma introducción, en este caso los saltos de línea es usando funciones. El concepto de funciones dentro de programación no es más que un código que recibe instrucciones que puede o no recibir algunos parámetros de entrada, o sea, inputs de algunas informaciones y nos devuelve un resultado.
+            -->
+         <script>
+
+            //var saltoDeLinea = ("<br><br><br>");//
+            SaltarLinea()
+            document.write ("Candela");
+            SaltarLinea()
+            document.write ("Agustina");
+            SaltarLinea()
+            document.write ("Valentina");
+            SaltarLinea()
+         </script>
+
+<h3> Mismo paso, pero con funcion de un br</h3>
+         <script>
+            //los parentesis definen el parametro de la funcion//
+
+            function SaltarLinea() {
+                document.write("<br>");
+                document.write("<br>");
+                document.write("<br>");
+            };
+
+            //El uso del parentesis es sumamente importante para que sea reconocida la funcion//
+
+            //Una buena practica es acostumbrarnos a usar nombres en la funciones que sean de facil entendimiento para saber que es lo que hacen si es que en algun momento tengo que volver a mi codigo y actualizarlo, y que sea de facil acceso//
+
+            document.write ("Candela");
+           SaltarLinea();
+            document.write ("Agustina");
+           SaltarLinea();
+            document.write ("Valentina");
+         </script>
+
+         <h2>Asignarle un parametro a una función</h2>
+         <script>
+
+            //Vamos a editar la funcion documentwrite para que este en español//
+
+            function imprimir(frase){
+                document.write (frase)
+                SaltarLinea(); //Esto es ua funcion dentro de otra funcion//
+            };
+
+            //Aqui, luego de pasarle el parametro de l variable frase, la funcion queda en espera para imprimir el texto que le demos//
+
+            imprimir("Esto es una frase");
+            imprimir("Esto es otra frase");
+
+
+        var edad1 = 10;
+        var edad2 = 20;
+        var edad3 = 30;
+        var totalEdades = edad1 + edad2 + edad3;
+        var promedioEdades = totalEdades/3;
+
+        alert("***Total de edades es " + totalEdades + "***");
+        alert("***La media de las edades es " +  promedioEdades + "***");
+         </script>
+</body>
+</html>
